@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition </title>
+    <link rel="stylesheet" href="./transition.css">
+</head>
+
+<body>
+    <h1>CSS Transitions Examples</h1>
+
+    <section>
+        <h2>Example 1: Hover Transition</h2>
+        <p>This example demonstrates a transition that occurs when you hover over the button. The background color
+            smoothly changes from blue to green.</p>
+        <button class="example1">Hover me!</button>
+    </section>
+
+    <section>
+        <h2>Example 2: Focus Transition</h2>
+        <p>This example shows a transition effect when the input field receives focus. The border color smoothly changes
+            to blue.</p>
+        <input type="text" class="example2" placeholder="Focus on me">
+    </section>
+
+    <section>
+        <h2>Example 3: Active Transition</h2>
+        <p>In this example, a transition is applied when the button is pressed. The button slightly scales down to give
+            a pressing effect.</p>
+        <button class="example3">Press me!</button>
+    </section>
+
+    <section>
+        <h2>Example 4: Checked Transition</h2>
+        <p>Here, a transition is applied when a checkbox is checked. The associated label changes color smoothly.</p>
+        <input type="checkbox" id="checkbox" class="example4">
+        <label for="checkbox">Check me!</label>
+    </section>
+
+    <section>
+        <h2>Example 5: JavaScript Triggered Transition</h2>
+        <p>This example shows a transition triggered by JavaScript. When you click the button, the box rotates and
+            changes color.</p>
+        <button id="toggle">Toggle Box</button>
+        <div class="example5"></div>
+    </section>
+
+    <script>
+        document.getElementById('toggle').addEventListener('click', function () {
+            document.querySelector('.example5').classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>

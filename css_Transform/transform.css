@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+.box{
+    border: 2px solid black;
+    width: 150px;
+    height: 100px;
+    margin: 30px;
+    text-align: center;
+    background-color: blue;
+    color: #fff;
+}
+
+.translate{
+    transform: translate(200px, -50px) ; 
+    /* 1st is x axis */
+    /* 2nd y axis  */
+}
+.rotate{
+    transform: rotate(30deg);
+}
+
+.scale{
+transform: scale(0.8, 0.8);
+/* scale only takes number without units  */
+}
+
+.skew{
+    transform: skew(20deg, 20deg);
+}
+
+.box3d {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: lightcoral;
+}
+.box3d{
+    transition: transform 4s;
+}
+#trans3d {
+    transform:
+    /* perspective(700px) */
+    translateX(100px)
+    translateY(100px)
+    translateZ(2000px)
+}
+
+#rota3d {
+    transform:
+    /* perspective(700px) */
+    rotateX(45deg)
+    rotateY(60deg)
+    rotateZ(45deg)
+}
