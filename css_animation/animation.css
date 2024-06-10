@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* css animation that changes a background-color from blue to pink */
+.example1 {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(29, 183, 222);
+  animation-name: example1;
+  animation-delay: 0.6s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  /* animation: example1 0.5s infinite alternate; */
+}
+
+@keyframes example1 {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: #ae0871;
+  }
+}
+/*! >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/** Example 2: Multiple Keyframes */
+
+.example2 {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  margin: 20px 0;
+  animation: example2 4s infinite;
+}
+
+@keyframes example2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*! >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Example 5: Multiple Animations */
+.example5 {
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+  animation: example5-move 3s infinite, example5-color 6s infinite ;
+}
+
+  /* Example 5: Multiple Animations */
+        @keyframes example5-move {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-50px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes example5-color {
+            0% {
+                background-color: #3498db;
+            }
+
+            50% {
+                background-color: #e74c3c;
+            }
+
+            100% {
+                background-color: #3498db;
+            }
+        }
+
+/* Property	Description
+@keyframes:	Specifies the animation code
+animation:	A shorthand property for setting all the animation properties
+animation-delay:	Specifies a delay for the start of an animation
+animation-direction:	Specifies whether an animation should be played forwards, backwards or in alternate cycles
+animation-duration:	Specifies how long time an animation should take to complete one cycle
+animation-fill-mode:	Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)
+animation-iteration-count:	Specifies the number of times an animation should be played
+animation-name:	Specifies the name of the @keyframes animation
+animation-play-state:	Specifies whether the animation is running or paused
+animation-timing-function:	Specifies the speed curve of the animation */

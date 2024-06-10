@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation </title>
+    <link rel="stylesheet" type="text/css" href="./animation.css">
+
+
+</head>
+
+<body>
+    <h1>CSS Animations Examples</h1>
+
+    <section>
+        <h2>Example 1: Simple Keyframe Animation</h2>
+        <p>This example demonstrates a simple keyframe animation that changes the background color from blue to green.
+        </p>
+        <div class="example1"></div>
+        <!-- Explanation: 
+                 - @keyframes example1 defines the animation named 'example1'.
+                 - from and to define the starting and ending states of the animation.
+                 - .example1 applies the animation to the element, with a duration of 2 seconds, infinite repetitions, and alternate direction. -->
+    </section>
+
+    <section>
+        <h2>Example 2: Multiple Keyframes</h2>
+        <p>This example shows an animation that rotates the element 360 degrees, with intermediate keyframes at 0, 50,
+            and 100 percent.</p>
+        <div class="example2"></div>
+        <!-- Explanation: 
+                 - @keyframes example2 defines the animation named 'example2'.
+                 - 0%, 50%, and 100% define the states at the respective times.
+                 - .example2 applies the animation to the element, with a duration of 4 seconds and infinite repetitions. -->
+    </section>
+
+    <section>
+        <h2>Example 3: Animation Delay</h2>
+        <p>This example demonstrates an animation that starts with a delay. The box fades in and moves to the right
+            after a 1-second delay.</p>
+        <div class="example3"></div>
+        <!-- Explanation: 
+                 - @keyframes example3 defines the animation named 'example3'.
+                 - The animation changes opacity and transforms position.
+                 - .example3 applies the animation to the element, with a duration of 2 seconds and a 1-second delay. The animation runs forwards only once. -->
+    </section>
+
+    <section>
+        <h2>Example 4: Animation Iteration Count</h2>
+        <p>This example shows an animation that scales the element up and down infinitely.</p>
+        <div class="example4"></div>
+        <!-- Explanation: 
+                 - @keyframes example4 defines the animation named 'example4'.
+                 - The animation scales the element up and down.
+                 - .example4 applies the animation to the element, with a duration of 3 seconds and infinite repetitions. -->
+    </section>
+
+    <section>
+        <h2>Example 5: Multiple Animations</h2>
+        <p>This example combines two animations: one that moves the element up and down and another that changes its
+            color.</p>
+        <div class="example5"></div>
+        <!-- Explanation: 
+                 - @keyframes example5-move defines the movement animation.
+                 - @keyframes example5-color defines the color change animation.
+                 - .example5 applies both animations to the element. The movement animation lasts 3 seconds, and the color change animation lasts 6 seconds, both with infinite repetitions. -->
+    </section>
+</body>
+
+</html>
