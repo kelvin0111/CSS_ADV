@@ -1,0 +1,41 @@
+ <section>
+        <h1>
+            Test positioning
+        </h1>
+        
+        <div class="boxA">
+            Box 1A
+            <div class="boxB">
+                Box 1B
+            </div>
+        </div>
+        
+        <p>Relative Position</p>
+        <small>Relative parent tag</small>
+        <div class="boxA">
+            Box 2A
+            <div class="boxB" id="box2b">
+                Box 2B
+            </div>
+        </div>
+        
+        
+        <p>Absolute Position</p>
+        <small>Absolute body tag</small>
+        <div class="boxA">
+            Box 3A
+            <div class="boxB" id="box3b">
+                Box 3B
+            </div>
+        </div>
+        
+        <p>Fixed Position</p>
+        <!-- <small>Absolute terhadap body tag</small> -->
+        <div class="boxA">
+            Box 4A
+            <div class="boxB" id="box4b">
+                Box 4B
+            </div>
+        </div>
+
+    </section>
